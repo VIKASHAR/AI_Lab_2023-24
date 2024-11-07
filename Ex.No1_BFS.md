@@ -13,33 +13,24 @@ To write a python program to implement Breadth first Search.
 7.   Call the bfs function by passing arguments visited, graph and starting node.
 8.   Stop the program.
 ### Program:
-```
+```python
 graph={
-    '5' : ['3','7'],
-    '3' : ['2','4'],
-    '7' : ['8'],
-    '2' : [],
-    '4' : ['8'],
-    '8' : []
-    
+    'A':['B','C'],'B':['D','E'],'C':['F','G'],'D':[],'E':[],'F':[],'G':[]
 }
-
-visited= []
-queue = []
+visited=[]
+queue=[]
 def bfs(visited,graph,node):
     visited.append(node)
     queue.append(node)
     while queue:
-        m= queue.pop(0)
-        print(m,end=" ")
-        for neighbour in graph[m]:
+        n=queue.pop(0)
+        print(n)
+        for neighbour in graph:
             if neighbour not in visited:
                 visited.append(neighbour)
                 queue.append(neighbour)
-                  
-#Driver code
-print("Following is the Breadth First Search")
-bfs(visited, graph,'5') #function calling
+print("Following is the Breath-First Search")
+bfs(visited,graph,'A')
 ```
 
 
@@ -52,7 +43,7 @@ bfs(visited, graph,'5') #function calling
 
 
 ### Output:
-![image](https://github.com/user-attachments/assets/99bdd65b-d859-47e4-a211-718aad6be3eb)
+![image](https://github.com/user-attachments/assets/eb9446e9-dc83-4331-a420-8b4332f63739)
 
 
 
