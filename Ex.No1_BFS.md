@@ -1,5 +1,6 @@
+
 # Ex.No: 1  Implementation of Breadth First Search 
-### DATE: 14.08.2024                                                                       
+### DATE: 14-08-2024                                                                        
 ### REGISTER NUMBER : 212222040179
 ### AIM: 
 To write a python program to implement Breadth first Search. 
@@ -13,30 +14,37 @@ To write a python program to implement Breadth first Search.
 7.   Call the bfs function by passing arguments visited, graph and starting node.
 8.   Stop the program.
 ### Program:
+```
+graph = {
+        5 : [3,7],
+        3 : [2,4],
+        7 : [8],
+        2 : [],
+        4 : [8],
+        8 : []}
 
-```python
-graph={
-    'A':['B','C'],'B':['D','E'],'C':['F','G'],'D':[],'E':[],'F':[],'G':[]
-}
-visited=[]
-queue=[]
-def bfs(visited,graph,node):
+visited = []
+queue = []
+
+def bfs(visited, graph, node):
     visited.append(node)
     queue.append(node)
     while queue:
-        n=queue.pop(0)
-        print(n)
-        for neighbour in graph:
+        m = queue.pop(0)
+        print(m)
+        for neighbour in graph[m]:
             if neighbour not in visited:
                 visited.append(neighbour)
                 queue.append(neighbour)
-print("Following is the Breath-First Search")
-bfs(visited,graph,'A')
+
+print("Following is the breadth-first search")
+bfs(visited,graph,5)
 ```
-
 ### Output:
+![image](https://github.com/user-attachments/assets/2e544ada-c52a-4c76-83da-a1b984b2f024)
 
-![image](https://github.com/user-attachments/assets/4a9ded56-80ae-4651-b6c6-7ff2191e9180)
+
+
 
 ### Result:
 Thus the breadth first search order was found sucessfully.
