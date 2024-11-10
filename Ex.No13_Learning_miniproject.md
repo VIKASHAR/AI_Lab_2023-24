@@ -1,6 +1,6 @@
 # Ex.No: 13 Learning – Use Supervised Learning  
 ### DATE:                                                                            
-### REGISTER NUMBER : 212222040124
+### REGISTER NUMBER : 212222040179
 ### AIM: 
 To write a program to train the classifier for -----------------.
 ###  Algorithm:
