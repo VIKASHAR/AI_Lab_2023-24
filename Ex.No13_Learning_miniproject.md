@@ -2,8 +2,36 @@
 ### DATE:                                                                            
 ### REGISTER NUMBER : 212222040179
 ### AIM: 
-To write a program to train the classifier for -----------------.
+To develop a predictive model using machine learning techniques to estimate the price of a house based on relevant features
+
 ###  Algorithm:
+
+Step 1: Start the program.
+
+Step 2: Load the dataset for house price prediction.
+
+Step 3: Select relevant features (bedrooms, bathrooms, sqft_living, floors) and the target variable (price).
+
+Step 4: Split the data into training and testing sets, with 80% for training and 20% for testing.
+
+Step 5: Scale the features using StandardScaler to normalize the data.
+
+Step 6: Initialize the RandomForestRegressor model with 100 estimators.
+
+Step 7: Train the model using the scaled training data.
+
+Step 8: Test the model by making predictions on the scaled test data.
+
+Step 9: Save the trained model and the scaler using the pickle library.
+
+Step 10: End the program.
+
+
+
+
+
+
+
 
 ### Program:
 ```
